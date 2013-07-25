@@ -6056,9 +6056,9 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <devices>
 <device name="" package="TAILLIGHT">
 <connects>
-<connect gate="G$1" pin="H1" pad="H2"/>
-<connect gate="G$1" pin="H2" pad="L1"/>
-<connect gate="G$1" pin="L1" pad="H1"/>
+<connect gate="G$1" pin="H1" pad="H1"/>
+<connect gate="G$1" pin="H2" pad="H2"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
 <connect gate="G$1" pin="L2" pad="L2"/>
 </connects>
 <technologies>

@@ -2103,13 +2103,13 @@ design rules under a new name.</description>
 <signal name="N$10">
 <contactref element="LED3" pad="CT"/>
 <contactref element="LED4" pad="AN"/>
-<via x="40.767" y="12.319" extent="1-16" drill="0.6" diameter="1.27" shape="square"/>
+<via x="40.7162" y="12.319" extent="1-16" drill="0.6" diameter="1.27" shape="square"/>
 <wire x1="39.2682" y1="11.0998" x2="39.878" y2="11.0998" width="0.6096" layer="1"/>
-<wire x1="39.878" y1="11.0998" x2="40.767" y2="11.9888" width="1.27" layer="1"/>
-<wire x1="40.767" y1="11.9888" x2="40.767" y2="12.319" width="1.27" layer="1"/>
+<wire x1="39.878" y1="11.0998" x2="40.6908" y2="11.9888" width="1.27" layer="1"/>
+<wire x1="40.6908" y1="11.9888" x2="40.7162" y2="12.319" width="1.27" layer="1"/>
 <wire x1="39.2682" y1="13.208" x2="39.8272" y2="13.3096" width="0.6096" layer="16"/>
-<wire x1="39.8272" y1="13.3096" x2="40.767" y2="12.3698" width="1.27" layer="16"/>
-<wire x1="40.767" y1="12.3698" x2="40.767" y2="12.319" width="1.27" layer="16"/>
+<wire x1="39.8272" y1="13.3096" x2="40.7162" y2="12.3698" width="1.27" layer="16"/>
+<wire x1="40.7162" y1="12.3698" x2="40.7162" y2="12.319" width="1.27" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="Q1" pad="P$3"/>
@@ -2131,6 +2131,47 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="4.6482" x2="40.64" y2="4.318" width="1.27" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="3,16,5dbbebf93d188b5a"/>
+<approved hash="4,1,ac3602bea13228e2"/>
+<approved hash="4,1,81750394a04a0e83"/>
+<approved hash="4,1,2a14a278b20be267"/>
+<approved hash="4,1,fe39adf611a63388"/>
+<approved hash="4,1,271978fe0ac8a137"/>
+<approved hash="4,1,95c49a918be4397c"/>
+<approved hash="19,1,6473709224f0d7a3"/>
+<approved hash="19,1,b576719883fa2c54"/>
+<approved hash="19,1,b3ae4bf060fdfa2b"/>
+<approved hash="19,1,05001b8295ac874e"/>
+<approved hash="19,1,3b1af98977dfb9f8"/>
+<approved hash="19,1,86429aac189e0810"/>
+<approved hash="19,1,1b300e8c249453a0"/>
+<approved hash="5,1,4ec235474f80370a"/>
+<approved hash="19,1,9af5bcde3ee81477"/>
+<approved hash="19,1,9a78bab570fd3b70"/>
+<approved hash="19,1,c241db01520d40ef"/>
+<approved hash="5,1,4465c0a8a3155b58"/>
+<approved hash="5,1,3d8db4c90021b0dc"/>
+<approved hash="5,1,79e8cfac18b66c35"/>
+<approved hash="5,1,ee3e041d300dbfc2"/>
+<approved hash="5,1,36334254bbec2f69"/>
+<approved hash="5,1,ba593964be01d450"/>
+<approved hash="4,16,b9bc42bea0321868"/>
+<approved hash="4,16,e5ad43b4a1fa329b"/>
+<approved hash="4,16,ddf68d062171a981"/>
+<approved hash="5,16,5597b0270b91160f"/>
+<approved hash="19,16,38a004943ff4dc9e"/>
+<approved hash="19,16,b607d8ad3231be83"/>
+<approved hash="19,16,f4bdd06a99af315e"/>
+<approved hash="19,16,507348e3c689d2a7"/>
+<approved hash="19,16,7307ce7643b2f0d3"/>
+<approved hash="19,16,d3abc9894bff5d63"/>
+<approved hash="19,16,1fe81b5177299188"/>
+<approved hash="19,16,390a2566e5ae0014"/>
+<approved hash="19,16,d3de88b309175c6a"/>
+<approved hash="19,16,4084b23c95250306"/>
+<approved hash="19,16,337719bdd06c26d4"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
