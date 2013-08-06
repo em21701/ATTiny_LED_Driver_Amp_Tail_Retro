@@ -5611,7 +5611,10 @@ type 0309, grid 2.5 mm</description>
 <smd name="P$3" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
 <smd name="P$1" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="P$2" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="31"/>
+<rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="31"/>
+<rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="31"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29" rot="R180"/>
 <rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="29"/>
 <rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="29"/>
 </package>
@@ -5676,9 +5679,9 @@ type 0309, grid 2.5 mm</description>
 0603 chip</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.729" x2="1.727" y2="0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="0.729" x2="1.727" y2="-0.729" width="0.0508" layer="39"/>
-<wire x1="1.727" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="0.729" x2="1.7526" y2="0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="0.729" x2="1.7526" y2="-0.729" width="0.0508" layer="39"/>
+<wire x1="1.7526" y1="-0.729" x2="-1.473" y2="-0.729" width="0.0508" layer="39"/>
 <wire x1="-1.473" y1="-0.729" x2="-1.473" y2="0.729" width="0.0508" layer="39"/>
 <smd name="1A" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
 <smd name="2C" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
@@ -5825,8 +5828,12 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <smd name="AN" x="-1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
 <smd name="CT" x="1.6" y="0" dx="0.9" dy="0.5" layer="1" thermals="no"/>
 <text x="-2.54" y="1.016" size="0.8128" layer="25">+</text>
-<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="1"/>
+<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="31"/>
+<rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="31"/>
+<rectangle x1="-1.75" y1="-1.75" x2="-1.05" y2="1.75" layer="29"/>
 <rectangle x1="1.15" y1="-1.65" x2="1.65" y2="1.65" layer="1"/>
+<rectangle x1="-1.65" y1="-1.65" x2="-1.15" y2="1.65" layer="1"/>
+<rectangle x1="1.05" y1="-1.75" x2="1.75" y2="1.75" layer="29"/>
 </package>
 <package name="TAILLIGHT">
 <smd name="L1" x="-2.8575" y="0" dx="1.905" dy="10.795" layer="1"/>

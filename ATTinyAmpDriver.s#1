@@ -53,6 +53,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="TestPads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
@@ -5604,44 +5605,16 @@ type 0309, grid 2.5 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="Personal">
-<packages>
-<package name="TPI_PAD">
-<smd name="P$1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TPI_PIN">
-<circle x="0" y="0" radius="1.27" width="0.127" layer="94"/>
-<pin name="TPI_PIN" x="2.54" y="0" visible="off" length="short" rot="R180"/>
-<text x="1.27" y="1.27" size="1.27" layer="94">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TPI">
-<gates>
-<gate name="G$1" symbol="TPI_PIN" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TPI_PAD">
-<connects>
-<connect gate="G$1" pin="TPI_PIN" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Combined">
 <packages>
 <package name="SOT-23_POWER">
 <smd name="P$3" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
 <smd name="P$1" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="P$2" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="31"/>
+<rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="31"/>
+<rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="31"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29" rot="R180"/>
 <rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="29"/>
 <rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="29"/>
 </package>
@@ -5870,6 +5843,10 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <rectangle x1="-1.27" y1="2.8448" x2="3.175" y2="5.3848" layer="21"/>
 <rectangle x1="-3.175" y1="2.8448" x2="1.27" y2="5.3848" layer="22"/>
 </package>
+<package name="TPI_PAD">
+<smd name="P$1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+<circle x="0" y="0" radius="0.3175" width="0.127" layer="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IGFET-EP-GDS">
@@ -5957,6 +5934,11 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <circle x="-7.62" y="5.08" radius="2.54" width="0.254" layer="94"/>
 <circle x="-7.62" y="-5.08" radius="2.54" width="0.254" layer="94"/>
 <circle x="-7.62" y="-10.16" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TPI_PIN">
+<circle x="0" y="0" radius="1.27" width="0.127" layer="94"/>
+<pin name="TPI_PIN" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<text x="1.27" y="1.27" size="1.27" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6061,6 +6043,21 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <connect gate="G$1" pin="H2" pad="H2"/>
 <connect gate="G$1" pin="L1" pad="L1"/>
 <connect gate="G$1" pin="L2" pad="L2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPI">
+<gates>
+<gate name="G$1" symbol="TPI_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TPI_PAD">
+<connects>
+<connect gate="G$1" pin="TPI_PIN" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6186,10 +6183,10 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <attribute name="DIGIKEY" value="RMCF0603FT1K00CT-ND"/>
 <attribute name="DIGIKEY_COST" value=".04"/>
 </part>
-<part name="TPIDATA" library="Personal" deviceset="TPI" device=""/>
-<part name="TPICLK" library="Personal" deviceset="TPI" device=""/>
-<part name="+5V" library="Personal" deviceset="TPI" device=""/>
-<part name="GND" library="Personal" deviceset="TPI" device=""/>
+<part name="TPIDATA" library="Combined" deviceset="TPI" device=""/>
+<part name="TPICLK" library="Combined" deviceset="TPI" device=""/>
+<part name="+5V" library="Combined" deviceset="TPI" device=""/>
+<part name="GND" library="Combined" deviceset="TPI" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="C-US" device="C0603" value="10n">
@@ -6197,7 +6194,7 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <attribute name="DIGIKEY_COST" value=".10"/>
 </part>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="RESET" library="Personal" deviceset="TPI" device=""/>
+<part name="RESET" library="Combined" deviceset="TPI" device=""/>
 <part name="SUPPLY19" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY21" library="supply2" deviceset="VCC" device=""/>
 <part name="R9" library="resistor" deviceset="R-US_" device="R0603" value="28.7K">
@@ -6255,9 +6252,9 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <attribute name="DIGIKEY" value="RMCF0603FT1K00CT-ND"/>
 <attribute name="DIGIKEY_COST" value=".04"/>
 </part>
-<part name="PWM" library="Personal" deviceset="TPI" device=""/>
-<part name="MEASURE" library="Personal" deviceset="TPI" device=""/>
-<part name="OUTA" library="Personal" deviceset="TPI" device=""/>
+<part name="PWM" library="Combined" deviceset="TPI" device=""/>
+<part name="MEASURE" library="Combined" deviceset="TPI" device=""/>
+<part name="OUTA" library="Combined" deviceset="TPI" device=""/>
 <part name="LED1" library="Combined" deviceset="LUXEON_REBEL" device="CREE_XP-E"/>
 <part name="LED2" library="Combined" deviceset="LUXEON_REBEL" device="CREE_XP-E"/>
 <part name="LED3" library="Combined" deviceset="LUXEON_REBEL" device="CREE_XP-E"/>

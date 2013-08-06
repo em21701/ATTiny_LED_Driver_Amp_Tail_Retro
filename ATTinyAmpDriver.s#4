@@ -5717,11 +5717,11 @@ type 0309, grid 2.5 mm</description>
 <rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-<polygon width="0.0762" layer="1">
-<vertex x="1.27" y="0.508"/>
+<polygon width="0.3048" layer="1">
+<vertex x="1.27" y="0.381"/>
 <vertex x="1.524" y="0.254"/>
 <vertex x="1.524" y="-0.254"/>
-<vertex x="1.27" y="-0.508"/>
+<vertex x="1.27" y="-0.381"/>
 </polygon>
 <wire x1="-0.762" y1="1.016" x2="-0.254" y2="1.016" width="0.127" layer="51"/>
 <wire x1="-0.254" y1="1.016" x2="-0.254" y2="1.27" width="0.127" layer="51"/>
@@ -6056,9 +6056,9 @@ Source: http://www.lumileds.com/pdfs/AB32.pdf</description>
 <devices>
 <device name="" package="TAILLIGHT">
 <connects>
-<connect gate="G$1" pin="H1" pad="H2"/>
-<connect gate="G$1" pin="H2" pad="L1"/>
-<connect gate="G$1" pin="L1" pad="H1"/>
+<connect gate="G$1" pin="H1" pad="H1"/>
+<connect gate="G$1" pin="H2" pad="H2"/>
+<connect gate="G$1" pin="L1" pad="L1"/>
 <connect gate="G$1" pin="L2" pad="L2"/>
 </connects>
 <technologies>

@@ -8,18 +8,18 @@
 </settings>
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -71,6 +71,8 @@ BULB RETROFIT</text>
 <text x="20.955" y="5.3086" size="0.8128" layer="25">R</text>
 <text x="15.3416" y="7.4168" size="0.8128" layer="25">V</text>
 <text x="16.1036" y="7.4168" size="0.8128" layer="25">M</text>
+<dimension x1="0" y1="0" x2="41.91" y2="0" x3="20.955" y3="-4.7498" textsize="1.778" layer="20" unit="inch" precision="3"/>
+<dimension x1="0" y1="15.875" x2="0" y2="0" x3="-2.8194" y3="7.9375" textsize="1.778" layer="20" unit="inch" precision="3"/>
 </plain>
 <libraries>
 <library name="Exar_By_element14_Batch_1">
@@ -1338,7 +1340,10 @@ at 27/07/2012 14:02:49</description>
 <smd name="P$3" x="0" y="0" dx="2.9" dy="2.05" layer="1" stop="no" cream="no"/>
 <smd name="P$1" x="-0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
 <smd name="P$2" x="0.95" y="-2.025" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
-<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="31"/>
+<rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="31"/>
+<rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="31"/>
+<rectangle x1="-0.2795" y1="-0.362" x2="0.2795" y2="0.362" layer="29" rot="R180"/>
 <rectangle x1="-1.2295" y1="-2.331" x2="-0.657" y2="-1.607" layer="29"/>
 <rectangle x1="0.657" y1="-2.331" x2="1.2295" y2="-1.607" layer="29"/>
 </package>
